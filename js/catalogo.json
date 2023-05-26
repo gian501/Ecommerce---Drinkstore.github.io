@@ -1,0 +1,225 @@
+[
+    {
+        "id": "cerveza-01",
+        "titulo": "Stella Artois 473 ml",
+        "imagen": "./img/cervezas/01.jpg",
+        "categoria": {
+            "nombre": "Cervezas",
+            "id": "cervezas"
+        },
+        "precio": 650
+    },
+    {
+        "id": "cerveza-02",
+        "titulo": "Heineken 473 ml",
+        "imagen": "./img/cervezas/02.jpg",
+        "categoria": {
+            "nombre": "Cervezas",
+            "id": "cervezas"
+        },
+        "precio": 550
+    },
+    {
+        "id": "cerveza-03",
+        "titulo": "Goolsh 550 ml",
+        "imagen": "./img/cervezas/03.jpg",
+        "categoria": {
+            "nombre": "Cervezas",
+            "id": "cervezas"
+        },
+        "precio": 900
+    },
+    {
+        "id": "cerveza-04",
+        "titulo": "Blue Moon 330 ml",
+        "imagen": "./img/cervezas/04.jpg",
+        "categoria": {
+            "nombre": "Cervezas",
+            "id": "cervezas"
+        },
+        "precio": 800
+    },
+    {
+        "id": "cerveza-05",
+        "titulo": "Corona 330 ml",
+        "imagen": "./img/cervezas/05.jpg",
+        "categoria": {
+            "nombre": "Cervezas",
+            "id": "cervezas"
+        },
+        "precio": 600
+    },
+    
+    {
+        "id": "Whisky-01",
+        "titulo": "Glenmorangie The Quinta Ruban Whisky 700 ml",
+        "imagen": "./img/whisky/01.jpg",
+        "categoria": {
+            "nombre": "Whisky",
+            "id": "Whisky-Bourbon"
+        },
+        "precio": 73000
+    },
+    {
+        "id": "Whisky-02",
+        "titulo": "Johnnie Walker Blue Label Whisky 750 ml",
+        "imagen": "./img/whisky/02.jpg",
+        "categoria": {
+            "nombre": "Whisky",
+            "id": "Whisky-Bourbon"
+        },
+        "precio": 101000
+    },
+    {
+        "id": "Whisky-03",
+        "titulo": "Makers Mark Whisky 750 ml",
+        "imagen": "./img/whisky/03.jpg",
+        "categoria": {
+            "nombre": "Whisky",
+            "id": "Whisky-Bourbon"
+        },
+        "precio": 21000
+    },
+    {
+        "id": "Whisky-04",
+        "titulo": "Glenfdich 15 Años Whisky 750 ml",
+        "imagen": "./img/whisky/04.jpg",
+        "categoria": {
+            "nombre": "Whisky",
+            "id": "Whisky-Bourbon"
+        },
+        "precio": 50000
+    },
+    {
+        "id": "Whisky-05",
+        "titulo": "The Macallan Triple Cask 12 Años Whisky 700 ml",
+        "imagen": "./img/whisky/05.jpg",
+        "categoria": {
+            "nombre": "Whisky",
+            "id": "Whisky-Bourbon"
+        },
+        "precio": 71000
+    },
+    {
+        "id": "Whisky-06",
+        "titulo": "Glen Moray Heritage 18 Años Whisky 700 ml",
+        "imagen": "./img/whisky/06.jpg",
+        "categoria": {
+            "nombre": "Whisky",
+            "id": "Whisky-Bourbon"
+        },
+        "precio": 110000
+    },
+    {
+        "id": "Whisky-07",
+        "titulo": "The Macallan Sherry Oak 12 Años Whisky 750 ml",
+        "imagen": "./img/whisky/07.jpg",
+        "categoria": {
+            "nombre": "Whisky",
+            "id": "Whisky-Bourbon"
+        },
+        "precio": 95000
+    },
+    {
+        "id": "Whisky-08",
+        "titulo": "Chivas Regal Royal Salute 21 Años Sapphire Whisky 700 ml",
+        "imagen": "./img/whisky/08.jpg",
+        "categoria": {
+            "nombre": "Whisky",
+            "id": "Whisky-Bourbon"
+        },
+        "precio": 95000
+    },
+    
+    {
+        "id": "Gin-01",
+        "titulo": "Bombay Gin 750 ml",
+        "imagen": "./img/gin/01.jpg",
+        "categoria": {
+            "nombre": "Gin",
+            "id": "gin"
+        },
+        "precio": 7500
+    },
+    {
+        "id": "Gin-02",
+        "titulo": "Hendricks Gin 700 ml",
+        "imagen": "./img/gin/02.jpg",
+        "categoria": {
+            "nombre": "Gin",
+            "id": "gin"
+        },
+        "precio": 19000
+    },
+    {
+        "id": "Gin-03",
+        "titulo": "Rutte Sloe Gin 700 ml",
+        "imagen": "./img/gin/03.jpg",
+        "categoria": {
+            "nombre": "Gin",
+            "id": "gin"
+        },
+        "precio": 40000
+    },
+    {
+        "id": "Gin-04",
+        "titulo": "Puerto de Indias Black Edition Gin 700 ml",
+        "imagen": "./img/gin/04.jpg",
+        "categoria": {
+            "nombre": "Gin",
+            "id": "gin"
+        },
+        "precio": 26000
+    },
+    {
+        "id": "Gin-05",
+        "titulo": "Tanqueray Gin 700 ml",
+        "imagen": "./img/gin/05.jpg",
+        "categoria": {
+            "nombre": "Gin",
+            "id": "gin"
+        },
+        "precio": 10000
+    },
+    
+    {
+        "id": "Ron-01",
+        "titulo": "Bacardi Carta Oro Ron 750 ml",
+        "imagen": "./img/ron/01.jpg",
+        "categoria": {
+            "nombre": "Ron",
+            "id": "ron"
+        },
+        "precio": 4500
+    },
+    {
+        "id": "Ron-02",
+        "titulo": "Flor de Caña Centenario 12 Años Ron 750 ml",
+        "imagen": "./img/ron/02.jpg",
+        "categoria": {
+            "nombre": "Ron",
+            "id": "ron"
+        },
+        "precio": 30000
+    },
+    {
+        "id": "Ron-03",
+        "titulo": "Appleton Estate Extra 12 Años Ron 750 ml",
+        "imagen": "./img/ron/03.jpg",
+        "categoria": {
+            "nombre": "Ron",
+            "id": "ron"
+        },
+        "precio": 14000
+    },
+    {
+        "id": "Ron-04",
+        "titulo": "Diplomático Mantuano Ron 700 ml",
+        "imagen": "./img/ron/04.jpg",
+        "categoria": {
+            "nombre": "Ron",
+            "id": "ron"
+        },
+        "precio": 22000
+    }
+]
