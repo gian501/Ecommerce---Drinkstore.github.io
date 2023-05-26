@@ -1,17 +1,4 @@
-let productos = [];
-
-fetch("js/catalogo.json")
-    .then(response => response.json())
-    .then(data => {
-        productos = data;
-        refreshProduct(productos);
-    });
-
-
-
-
-
-/*const nav = document.querySelector("#nav");
+const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
@@ -21,16 +8,21 @@ abrir.addEventListener("click", () => {
 
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
-})*/
+})
 
+let productos = [];
+const url = "js/catalogo.json"
 
+fetch(url)
+    .then(response => response.json())
+    .then(info => {
+        productos = info;
+        refreshProduct(productos);
+    });
 
 const dProduct = document.querySelector("#produc-detail");
 const catProduct = document.querySelector("#encabezado");
 const contador = document.querySelector("#contador");
-
-
-
 
 function refreshProduct(producSelec) {
 
