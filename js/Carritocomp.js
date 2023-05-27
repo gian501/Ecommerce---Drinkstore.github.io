@@ -128,10 +128,28 @@ function restarUnitCarrito(e) {
     const idProductR = e.currentTarget.dataset.id;
     const indic = productAgCarr.findIndex((produc) => produc.id === idProductR);
     if(productAgCarr[indic].cantidad > 1){
-        productAgCarr[indic].cantidad--;
-        localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
-        refreshCarr();
+        Swal.fire({
+            title: 'Estas seguro de que deseas quitar una unidad del carrito?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+                productAgCarr[indic].cantidad--;
+                localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
+                refreshCarr();
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                  )
+                }
+              })
+        
     }
+    
     
 }
 botonVaciar.addEventListener("click", vaciarCarrito);

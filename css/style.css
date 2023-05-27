@@ -101,7 +101,7 @@ main {
 }
 
 .encabezado {
-    color: var(--clr-white);
+    color: var(--clr-main);
     margin-bottom: 2rem;
 }
 
@@ -204,6 +204,9 @@ main {
 .carrito-acciones {
     display: flex;
     justify-content: space-between;
+}
+.restar, .sumar{
+    cursor: pointer;
 }
 
 .limpiar-c {
