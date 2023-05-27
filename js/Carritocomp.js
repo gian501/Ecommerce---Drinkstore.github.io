@@ -73,9 +73,24 @@ function actualizarbElim() {
 function elimProduct(e) {
     const idBoton = e.currentTarget.id;
     const index = productAgCarr.findIndex(producto => producto.id === idBoton);
-    productAgCarr.splice(index, 1);
-    refreshCarr();
-    localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
+    Swal.fire({
+        title: 'Estas seguro que deseas eliminar el producto y sus unidades?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Si',
+        denyButtonText: `No`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            productAgCarr.splice(index, 1);
+            refreshCarr();
+            localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
+          Swal.fire('Se elimino el producto', '', 'success')
+        } else if (result.isDenied) {
+          Swal.fire('Tu producto continua en el carrito', '', 'info')
+        }
+      })
+    
 
 }
 
