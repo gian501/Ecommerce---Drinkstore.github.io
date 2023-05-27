@@ -111,9 +111,26 @@ function sumarUnitCarrito(e) {
     e.preventDefault();
     const idProductS = e.currentTarget.dataset.id;
     const indice = productAgCarr.findIndex((p) => p.id === idProductS);
-    productAgCarr[indice].cantidad++;
-    localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
-    refreshCarr();
+    Swal.fire({
+        title: 'Estas seguro de que deseas sumar una unidad del carrito?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#2E4053',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Agregar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            productAgCarr[indice].cantidad++;
+            localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
+            refreshCarr();
+          Swal.fire(
+            'Agregado',
+            'Se sumo una unidad al carrito',
+            'success'
+          )
+        }
+      })
+    
 
 }
 function actualizarBotonesResta() {
@@ -132,17 +149,17 @@ function restarUnitCarrito(e) {
             title: 'Estas seguro de que deseas quitar una unidad del carrito?',
             icon: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#2E4053',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: 'Eliminar'
           }).then((result) => {
             if (result.isConfirmed) {
                 productAgCarr[indic].cantidad--;
                 localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
                 refreshCarr();
                 Swal.fire(
-                    'Deleted!',
-                    'Your file has been deleted.',
+                    'Eliminado!',
+                    'Se quito una unidad al carrito',
                     'success'
                   )
                 }
