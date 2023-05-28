@@ -67,6 +67,15 @@ if(productAgLSCarr){
 }
 
 function sumarPaC(e) {
+    Toastify({
+        text: `se agrego una unidad al carrito`,
+        className: "info",
+        gravity: "bottom",
+        position: "left",
+        style: {
+          background: "#b46023",
+        }
+      }).showToast();
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton)
 

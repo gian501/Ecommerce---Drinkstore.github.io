@@ -76,8 +76,8 @@ function elimProduct(e) {
     Swal.fire({
         title: 'Estas seguro que deseas eliminar el producto y sus unidades?',
         showDenyButton: true,
-        showCancelButton: true,
-        confirmButtonText: 'Si',
+        confirmButtonText:  'Si', 
+        confirmButtonColor: '#2E4053',
         denyButtonText: `No`,
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
@@ -128,7 +128,7 @@ function sumarUnitCarrito(e) {
     const indice = productAgCarr.findIndex((p) => p.id === idProductS);
     Swal.fire({
         title: 'Estas seguro de que deseas sumar una unidad del carrito?',
-        icon: 'warning',
+        icon: 'question',
         showCancelButton: true,
         confirmButtonColor: '#2E4053',
         cancelButtonColor: '#d33',
@@ -157,7 +157,7 @@ function restarUnitCarrito(e) {
     if(productAgCarr[indic].cantidad > 1){
         Swal.fire({
             title: 'Estas seguro de que deseas quitar una unidad del carrito?',
-            icon: 'warning',
+            icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '#2E4053',
             cancelButtonColor: '#d33',
