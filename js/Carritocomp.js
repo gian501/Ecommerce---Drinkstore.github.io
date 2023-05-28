@@ -138,11 +138,6 @@ function sumarUnitCarrito(e) {
             productAgCarr[indice].cantidad++;
             localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
             refreshCarr();
-          Swal.fire(
-            'Agregado',
-            'Se sumo una unidad al carrito',
-            'success'
-          )
         }
       })
     
@@ -172,11 +167,6 @@ function restarUnitCarrito(e) {
                 productAgCarr[indic].cantidad--;
                 localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
                 refreshCarr();
-                Swal.fire(
-                    'Eliminado!',
-                    'Se quito una unidad al carrito',
-                    'success'
-                  )
                 }
               })
         
