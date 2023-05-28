@@ -67,8 +67,10 @@ if(productAgLSCarr){
 }
 
 function sumarPaC(e) {
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton)
     Toastify({
-        text: `se agrego una unidad al carrito`,
+        text: "Se agrego al carrito. +1",
         className: "info",
         gravity: "bottom",
         position: "left",
@@ -76,8 +78,6 @@ function sumarPaC(e) {
           background: "#b46023",
         }
       }).showToast();
-    const idBoton = e.currentTarget.id;
-    const productoAgregado = productos.find(producto => producto.id === idBoton)
 
     //check si el producto esta en el array
     if(productAgCarr.some(producto => producto.id === idBoton)){
