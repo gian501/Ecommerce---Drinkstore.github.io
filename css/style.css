@@ -1,9 +1,9 @@
 :root {
-    --clr-main: #2E4053;
-    --clr-main-light: #0d0d0d;
-    --clr-white: #ececec;
-    --clr-gray: #e2e2e2;
-    --clr-red: #b46023;
+    --clr-principal: #2E4053;
+    --clr-negro: #0d0d0d;
+    --clr-blanco: #ececec;
+    --clr-gris: #e2e2e2d2;
+    --clr-naranja: #b46023;
 }
 
 * {
@@ -18,13 +18,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: var(--clr-main)
+    background-color: var(--clr-principal)
 }
 
 .logo {
     padding: 1rem;
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--clr-principal);
+    color: var(--clr-blanco);
 }
 
 .nav-list {
@@ -43,18 +43,18 @@ ul {
 }
 
 .wrapper {
-    background-color: var(--clr-white);
+    background-color: var(--clr-blanco);
     align-self: center;
 }
 
 .logo {
     padding: 1rem;
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--clr-principal);
+    color: var(--clr-blanco);
 }
 
 .menu {
-    background-color: var(--clr-main);
+    background-color: var(--clr-principal);
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -63,7 +63,7 @@ ul {
 .boton-menu {
     background-color: transparent;
     border: 0;
-    color: var(--clr-white);
+    color: var(--clr-blanco);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -76,22 +76,22 @@ ul {
 }
 
 .boton-menu.active {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--clr-blanco);
+    color: var(--clr-principal);
     
 }
 
 .contador {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--clr-blanco);
+    color: var(--clr-principal);
     padding: .15rem .25rem;
     border-radius: .25rem;
     
 }
 
 .boton-carrito.active .contaddor {
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--clr-principal);
+    color: var(--clr-blanco);
 }
 
 main {
@@ -101,7 +101,7 @@ main {
 }
 
 .encabezado {
-    color: var(--clr-main);
+    color: var(--clr-principal);
     margin-bottom: 2rem;
 }
 
@@ -118,11 +118,9 @@ main {
 }
 
 .detail-p {
-
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--clr-principal);
+    color: var(--clr-blanco);
     padding: .5rem;
-    
     border-radius: 1rem;
     margin-top: 0rem;
     position: relative;
@@ -137,19 +135,19 @@ main {
 
 .sum-product {
     border: 0;
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--clr-blanco);
+    color: var(--clr-principal);
     padding: .4rem;
     text-transform: uppercase;
     border-radius: 2rem;
     cursor: pointer;
-    border: 2px solid var(--clr-white);
+    border: 2px solid var(--clr-blanco);
     transition: .2s, color .2s;
 }
 
 .sum-product:hover {
-    background-color: var(--clr-red);
-    color: var(--clr-white);
+    background-color: var(--clr-naranja);
+    color: var(--clr-blanco);
 }
 
 /** footer **/
@@ -158,12 +156,12 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--clr-main);
+    background: var(--clr-principal);
     height: auto;
     width: 100vw;
     font-family: "Rubik";
     padding-top: 40px;
-    color: #fff;
+    color: var(--clr-blanco);
 }
 .footer-content{
     display: flex;
@@ -196,7 +194,7 @@ footer{
 }
 .socials a{
     text-decoration: none;
-    color: #fff;
+    color: var(--clr-blanco);
 }
 .socials a i{
     font-size: 1.1rem;
@@ -204,7 +202,7 @@ footer{
 
 }
 .socials a:hover i{
-    color: var(--clr-red);
+    color: var(--clr-naranja);
 }
 
 /** CARRITO **/
@@ -217,7 +215,7 @@ footer{
 
 .empty-c,
 .carrito-comprado {
-    color: black;
+    color: var(--clr-negro);
     font-size: x-large;
     
 }
@@ -232,8 +230,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-gray);
-    color: var(--clr-main-light);
+    background-color: var(--clr-gris);
+    color: var(--clr-negro);
     padding: .5rem;
     padding-right: 1.5rem;
     border-radius: 1rem;
@@ -251,7 +249,7 @@ footer{
 .elim-p {
     border: 0;
     background-color: transparent;
-    color: var(--clr-main-light);
+    color: var(--clr-negro);
     cursor: pointer;
 }
 
@@ -265,10 +263,10 @@ footer{
 
 .limpiar-c {
     border: 0;
-    background-color: var(--clr-red);
+    background-color: var(--clr-naranja);
     padding: 1rem;
     border-radius: 1rem;
-    color: var(--clr-white);
+    color: var(--clr-blanco);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -278,9 +276,9 @@ footer{
 
 .carrito-acciones-total {
     display: flex;
-    background-color: var(--clr-gray);
+    background-color: var(--clr-gris);
     padding: 1rem;
-    color: var(--clr-main-light);
+    color: var(--clr-negro);
     text-transform: uppercase;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -289,9 +287,9 @@ footer{
 
 .compra-t {
     border: 0;
-    background-color: var(--clr-red);
+    background-color: var(--clr-naranja);
     padding: 1rem;
-    color: var(--clr-white);
+    color: var(--clr-blanco);
     text-transform: uppercase;
     cursor: pointer;
     border-top-right-radius: 1rem;
@@ -306,7 +304,7 @@ footer{
     display: none;
 }
 .footer{
-    background-color: var(--clr-main);
+    background-color: var(--clr-principal);
     padding: 0%;
     display: subgrid;
 
@@ -325,11 +323,11 @@ footer{
     }
 
     .abrir-menu {
-        color: var(--clr-white);
+        color: var(--clr-blanco);
     }
 
     .cerrar-menu {
-        color: #ececec;
+        color: var(--clr-blanco);
     }
 
     .nav {
@@ -343,9 +341,14 @@ footer{
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--clr-main);
+        background-color: var(--clr-principal);
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .produc-detail{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
     }
 
     .nav.visible {
@@ -359,6 +362,6 @@ footer{
     }
 
     .nav-list li a {
-        color: #ecececec;
+        color: var(--clr-blanco);
     }
 }

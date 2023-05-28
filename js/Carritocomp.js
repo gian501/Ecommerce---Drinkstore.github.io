@@ -85,7 +85,7 @@ function elimProduct(e) {
             productAgCarr.splice(index, 1);
             refreshCarr();
             localStorage.setItem("producin-C", JSON.stringify(productAgCarr));
-          Swal.fire('Se elimino el producto', '', 'success')
+          Swal.fire('Se elimino el producto', '', 'success', '#2E4053')
         } else if (result.isDenied) {
           Swal.fire('Tu producto continua en el carrito', '', 'info')
         }
