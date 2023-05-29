@@ -5,8 +5,13 @@
     --clr-gris: #e2e2e2d2;
     --clr-naranja: #b46023;
 }
-
-
+:root {
+    --clr-principal-dark:#4D5656;
+    --clr-fondo: #99A3A4;
+    --clr-letras: #ececec;
+    --clr-gris: #e2e2e2d2;
+    --clr-hover:#F5B7B1 ;
+}
 
 
 * {
@@ -23,8 +28,8 @@ header {
     padding: 2rem;
     background-color: var(--clr-principal)
 }
-header.dark {
-    background-color: #F18A0F
+body.dark header{
+    background-color: var(--clr-principal-dark);
 }
 
 .logo {
@@ -32,7 +37,10 @@ header.dark {
     background-color: var(--clr-principal);
     color: var(--clr-blanco);
 }
-
+body.dark .logo{
+    background-color: var(--clr-principal-dark);
+    color: var(--clr-hover);
+}
 .nav-list {
     list-style-type: none;
     display: flex;
@@ -52,11 +60,8 @@ ul {
     background-color: var(--clr-blanco);
     align-self: center;
 }
-
-.logo {
-    padding: 1rem;
-    background-color: var(--clr-principal);
-    color: var(--clr-blanco);
+body.dark .wrapper{
+    background-color: var(--clr-fondo);
 }
 
 .menu {
@@ -64,6 +69,9 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+}
+body.dark .menu{
+    background-color: var(--clr-principal-dark);
 }
 
 .boton-menu {
@@ -80,13 +88,19 @@ ul {
     font-size: .85rem;
     width: 100%;
 }
-
+body.dark .boton-menu{
+    background-color: transparent;
+    color: var(--clr-hover);
+}
 .boton-menu.active {
     background-color: var(--clr-blanco);
-    color: var(--clr-principal);
+    color: var(--clr-fondo);
     
 }
-
+body.dark .boton-menu.boton-menu.active{
+    background-color: var(--clr-hover);
+    color: var(--clr-principal-dark);
+}
 .contador {
     background-color: var(--clr-blanco);
     color: var(--clr-principal);
@@ -94,12 +108,19 @@ ul {
     border-radius: .25rem;
     
 }
+body.dark .contador{
+    background-color: var(--clr-hover);
+    color: var(--clr-principal);
+}
 
 .boton-carrito.active .contaddor {
     background-color: var(--clr-principal);
     color: var(--clr-blanco);
 }
-
+body.dark .boton-carrito.active .contaddor{
+    background-color: var(--clr-principal);
+    color: var(--clr-fondo);
+}
 main {
     margin-left: 0;
     border-radius: 2rem;
@@ -110,7 +131,9 @@ main {
     color: var(--clr-principal);
     margin-bottom: 2rem;
 }
-
+body.dark .encabezado{
+    color: var(--clr-hover); 
+}
 .produc-detail {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -134,6 +157,10 @@ main {
     flex-direction: column;
     gap: .25rem;
 }
+body.dark .detail-p{
+    background-color: var(--clr-principal-dark);
+    color: var(--clr-hover);
+}
 
 .nam-p {
     font-size: 1rem;
@@ -150,10 +177,19 @@ main {
     border: 2px solid var(--clr-blanco);
     transition: .2s, color .2s;
 }
+body.dark .sum-product{
+    background-color: var(--clr-hover);
+    color: var(--clr-principal);
+    border: 2px solid var(--clr-principal-dark);
+}
 
 .sum-product:hover {
     background-color: var(--clr-naranja);
     color: var(--clr-blanco);
+}
+body.dark .sum-product:hover{
+    background-color: var(--clr-fondo);
+    color: var(--clr-hover); 
 }
 
 /** footer **/
@@ -167,6 +203,10 @@ footer{
     width: 100vw;
     font-family: "Rubik";
     padding-top: 40px;
+    color: var(--clr-blanco);
+}
+body.dark footer{
+    background: var(--clr-principal-dark);
     color: var(--clr-blanco);
 }
 .footer-content{
@@ -202,6 +242,9 @@ footer{
     text-decoration: none;
     color: var(--clr-blanco);
 }
+body.dark .socials a{
+    color: var(--clr-blanco);
+}
 .socials a i{
     font-size: 1.1rem;
     transition: color .4s ease;
@@ -210,7 +253,9 @@ footer{
 .socials a:hover i{
     color: var(--clr-naranja);
 }
-
+body.dark .socials a:hover i{
+    color: var(--clr-hover);
+}
 /** CARRITO **/
 
 .contenedor-carrito {
@@ -226,6 +271,9 @@ footer{
     
 }
 
+body.dark .empty-c, .carrito-comprado{
+    color: var(--clr-hover);
+}
 .ca-p-ag {
     display: flex;
     flex-direction: column;
@@ -242,6 +290,10 @@ footer{
     padding-right: 1.5rem;
     border-radius: 1rem;
 }
+body.dark .carrito-producto {
+    background-color: var(--clr-gris);
+    color: var(--clr-negro);
+}
 
 .carrito-image-p {
     width: 4rem;
@@ -257,6 +309,9 @@ footer{
     background-color: transparent;
     color: var(--clr-negro);
     cursor: pointer;
+}
+body.dark .elim-p {
+    color: var(--clr-negro);
 }
 
 .carrito-acciones {
@@ -276,6 +331,10 @@ footer{
     text-transform: uppercase;
     cursor: pointer;
 }
+body.dark .limpiar-c {
+    background-color: var(--clr-hover);
+    color: var(--clr-blanco);
+}
 .carrito-acciones-derecha {
     display: flex;
 }
@@ -290,7 +349,10 @@ footer{
     border-bottom-left-radius: 1rem;
     gap: 3rem;
 }
-
+body.dark .carrito-acciones-total {
+    background-color: var(--clr-gris);
+    color: var(--clr-negro);
+}
 .compra-t {
     border: 0;
     background-color: var(--clr-naranja);
@@ -300,6 +362,10 @@ footer{
     cursor: pointer;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+body.dark .compra-t {
+    background-color: var(--clr-hover);
+    color: var(--clr-blanco);
 }
 
 .disabled {
@@ -313,6 +379,9 @@ footer{
     background-color: var(--clr-principal);
     padding: 0%;
     display: subgrid;
+}
+body.dark .footer{
+    background-color: var(--clr-principal);
 }
 /* dark-mode*/
 .switch {
@@ -345,7 +414,7 @@ footer{
 }
   
 .switch.active {
-    background: var(--clr-naranja);
+    background: var(--clr-hover);
     color: var(--clr-negro);
 }
   
@@ -362,6 +431,8 @@ footer{
     background: none;
     color: var(--clr-blanco);
 }
+
+
 
 
 /****** menu responsive ******/
@@ -381,7 +452,14 @@ footer{
         color: var(--clr-blanco);
     }
 
+    body.dark .abrir-menu {
+        color: var(--clr-blanco);
+    }
+
     .cerrar-menu {
+        color: var(--clr-blanco);
+    }
+    body.dark .cerrar-menu {
         color: var(--clr-blanco);
     }
 
@@ -399,6 +477,9 @@ footer{
         background-color: var(--clr-principal);
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    body.dark .nav {
+        background-color: var(--clr-principal-dark);
     }
     .produc-detail{
         display: grid;
@@ -418,5 +499,8 @@ footer{
 
     .nav-list li a {
         color: var(--clr-blanco);
+    }
+    body.dark .nav-list li a {
+        color: var(--clr-hover);
     }
 }
