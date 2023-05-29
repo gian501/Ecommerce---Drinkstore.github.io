@@ -211,7 +211,7 @@ body.dark footer{
 }
 .footer-content{
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -271,7 +271,8 @@ body.dark .socials a:hover i{
     
 }
 
-body.dark .empty-c, .carrito-comprado{
+body.dark .empty-c,
+body.dark .carrito-comprado{
     color: var(--clr-hover);
 }
 .ca-p-ag {
