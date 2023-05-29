@@ -1,6 +1,27 @@
 let productAgCarr = localStorage.getItem("producin-C");
 productAgCarr = JSON.parse(productAgCarr); 
 
+let bsColor = document.querySelector('#switch');
+
+bsColor.addEventListener('click', () => {
+	document.body.classList.toggle('dark');
+	bsColor.classList.toggle('active');
+
+	// Guardamos el modo en localstorage.
+	if(document.body.classList.contains('dark')){
+		localStorage.setItem('dark-mode', 'true');
+	} else {
+		localStorage.setItem('dark-mode', 'false');
+	}
+});
+if(localStorage.getItem('dark-mode') === 'true'){
+	document.body.classList.add('dark');
+	bsColor.classList.add('active');
+} else {
+	document.body.classList.remove('dark');
+	bsColor.classList.remove('active');
+}
+
 const carritoProductos = document.querySelector("#ca-p-ag");
 const carritoVacio = document.querySelector("#empty-c");
 const carritoAcc = document.querySelector("#carrito-acciones");
@@ -181,3 +202,5 @@ function vaciarCarrito() {
     refreshCarr();
 
 }
+
+
