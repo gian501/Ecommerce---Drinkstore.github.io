@@ -94,7 +94,7 @@ body.dark .boton-menu{
 }
 .boton-menu.active {
     background-color: var(--clr-blanco);
-    color: var(--clr-fondo);
+    color: var(--clr-principal);
     
 }
 body.dark .boton-menu.boton-menu.active{
@@ -453,14 +453,14 @@ body.dark .footer{
     }
 
     body.dark .abrir-menu {
-        color: var(--clr-blanco);
+        color: var(--clr-hover);
     }
 
     .cerrar-menu {
         color: var(--clr-blanco);
     }
     body.dark .cerrar-menu {
-        color: var(--clr-blanco);
+        color: var(--clr-hover);
     }
 
     .nav {
@@ -480,6 +480,7 @@ body.dark .footer{
     }
     body.dark .nav {
         background-color: var(--clr-principal-dark);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.794);
     }
     .produc-detail{
         display: grid;
